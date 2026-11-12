@@ -1,0 +1,20 @@
+# Index of every plugin this source ships, so a host can list and compat-check
+# them without a full clone. One [[plugin]] row per plugin directory.
+#
+# Rows need id, name and a positive integer plugin_api. When plugin_api rises,
+# add a [[plugin.release]] row per older API level (plugin_api, version and a
+# full 40-character rev) so users on an older Noctalia keep an installable
+# revision instead of losing the plugin.
+
+[[plugin]]
+id           = "madmedicnl/niri-workspaces"
+name         = "Niri Workspaces"
+version      = "1.0.0"
+author       = "madmedicnl"
+license      = "MIT"
+icon         = "layout-grid"
+description  = "Dots for the workspaces you are not on, with named workspaces you can leave out of the bar."
+deprecated   = false
+plugin_api   = 32
+tags         = ["bar", "indicator", "niri"]
+dependencies = ["niri"]
